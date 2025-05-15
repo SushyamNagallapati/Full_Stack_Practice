@@ -19,3 +19,106 @@
     
 </body>
 </html>
+
+
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+    /* font-display: swap; By using swap,the browser is going to use a fallback font, and then swap it with a custom font when it's available.  */
+  
+    font-display: fallback; /* By using fallback, the browser is going to use a fallback font, and then swap it with a custom font when it's available.  If not fallback font will be used.  */
+  
+    /* font-display: optional; This acts same as fallback, but behind the scene it will try to download the font and store it in cache */
+  
+    /* font-display: block; Never use this. The text will be initially invisible when the expected font is downloaded in the background. if the font don't appear after download, it will not display any text. ; */
+  }
+  
+  
+  @font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+  
+  }
+  
+  html {
+      font-size: 62.5%;
+  }
+  
+  *, *::before, *::after {
+      box-sizing: border-box;
+  }
+  
+  
+  body {
+    background: url(../Images/jeremy-thomas-E0AHdsENmDg-unsplash_fgg41z_c_scale\,w_320.jpg) no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 5rem;;
+    color: white;
+    font-weight: 900;
+    /* line-height: 1; */
+    text-transform: uppercase;
+    text-shadow: black 0px 5px 5px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    background:rgba(0 ,0 ,0 , 0.5);
+    padding: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+  
+  
+  @media screen and (min-width: 820px) {
+    body {
+      background: url(../Images/jeremy-thomas-E0AHdsENmDg-unsplash_fgg41z_c_scale\,w_816.jpg) no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      font-size: 5rem;
+      word-spacing: 1rem;
+    }
+  
+    p {
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background: url(../Images/jeremy-thomas-E0AHdsENmDg-unsplash_fgg41z_c_scale\,w_1440.jpg) no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+  
+    p {
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
