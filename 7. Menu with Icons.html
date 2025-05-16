@@ -6,6 +6,9 @@
     <title>Menu with Icons</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e163aaaf1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -77,7 +80,7 @@
   }
   
   body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Oswald, sans-serif;
     font-size: 1.5rem;
   }
   
@@ -91,13 +94,18 @@
   }
   
   li:hover {
-    background: #221a2e;
+    background: #241835ca;
+  
   }
   
   i {
     margin-right: 1rem;
     text-align: center;
     width: 3rem;
+  }
+  
+  i:hover {
+    color: yellow;
   }
   
   ul {
@@ -108,13 +116,16 @@
   
   a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0rem;
     text-align: center;
-  
-    color: dodgerblue;
+    color: rgb(1, 123, 245);
+    letter-spacing: 1px;
   }
   
+  a:hover {
+    color: rgb(6, 255, 6);
+  }
   
   @media screen and (min-width: 795px) {
     .menu {
